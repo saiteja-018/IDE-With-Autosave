@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colourful Tabbed Code Editor</title>
+  <link rel="stylesheet" href="color.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+ <div class="navbar">
+    <h2 class="logo">Scoder</h2>
+    <div class="nav-links">
+      <a href="log.html"><button>Login</button></a>
+      <a href="sign.html"><button>Signup</button></a>
+      <a href="learn.html"><button>Learn</button></a>
+    </div>
+  </div>
+<div class="editor-container">
+  <div class="tab-buttons">
+    <button class="tab-html active" onclick="openTab('html', this)">HTML</button>
+    <button class="tab-css" onclick="openTab('css', this)">CSS</button>
+    <button class="tab-js" onclick="openTab('js', this)">JavaScript</button>
+  </div>
+
+  <div id="html" class="tab-content">
+    <textarea id="htmlCode" placeholder="Write HTML here..."></textarea>
+    
+  </div>
+
+  <div id="css" class="tab-content" style="display:none;">
+    <textarea id="cssCode" placeholder="Write CSS here..."></textarea>
+  </div>
+
+  <div id="js" class="tab-content" style="display:none;">
+    <textarea id="jsCode" placeholder="Write JavaScript here..."></textarea>
+  </div>
+
+  <button class="run-btn" onclick="runCode()">▶ Run</button>
+  <button class="clear-btn" onclick="clearAll()">🗑 Clear All</button>
+  <button class="download-btn" onclick="downloadProject()">⬇ Download Project</button>
+  <button class="zip-btn" onclick="downloadZip()">📦 Download ZIP</button>
+
+
+
+  <iframe id="output"></iframe>
+</div>
+
+<script src="fun.js"></script>
+</body>
+</html>

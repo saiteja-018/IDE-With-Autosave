@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoder - Sign Up</title>
+  <link rel="icon" href="https://res.cloudinary.com/dh8me97r4/image/upload/v1694359623/IMG_20230910_205517_oz8rhk.png" type="image">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+    }
+    .signup-card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      width: 340px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .signup-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+    .signup-card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .signup-card h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+    .signup-card input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      transition: border 0.3s;
+    }
+    .signup-card input:focus {
+      border-color: #2575fc;
+      outline: none;
+    }
+    .signup-card button {
+      width: 100%;
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .signup-card button:hover {
+      background: #1e7e34;
+    }
+    .signup-card p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    .signup-card a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .signup-card a:hover {
+      text-decoration: underline;
+    }
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .success {
+      color: green;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-card">
+    <img src="https://res.cloudinary.com/dh8me97r4/image/upload/v1694359623/IMG_20230910_205517_oz8rhk.png" alt="Scoder Logo">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="log.html">Login</a></p>
+    <div id="message" class="message"></div>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+      const message = document.getElementById("message");
+
+      if (!email || !password || !confirmPassword) {
+        message.textContent = "Please fill in all fields.";
+        message.className = "message error";
+      } else if (password !== confirmPassword) {
+        message.textContent = "Passwords do not match.";
+        message.className = "message error";
+      } else {
+        message.textContent = "Signup successful! Redirecting...";
+        message.className = "message success";
+        setTimeout(() => {
+          window.location.href = "log.html";
+        }, 1500);
+      }
+    });
+  </script>
+
+</body>
+</html>

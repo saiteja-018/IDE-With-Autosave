@@ -1,0 +1,159 @@
+<html> 
+<head>
+    <title>Scoder</title> 
+    <link rel="icon" href="https://res.cloudinary.com/dh8me97r4/image/upload/v1694359623/IMG_20230910_205517_oz8rhk.png" type="image">
+<style>
+*{
+        font-family: "Poppins", sans-serif;
+ }
+ li {
+          margin: 10px; /* Add margin between list items */
+          padding: 15px; /* Add padding on the left side of each list item */
+    }
+    .btn{
+        color: rgb(16, 17, 17);
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: rgb(0, 255, 68);
+        border-radius: 10px;
+        text-decoration: none;
+        float:right;
+        margin-top: 20px;
+        margin-right: 20px;
+      
+  
+      }
+      .btn:hover{
+        background-color: rgb(0, 255, 21);
+        padding:15px 24px 15px 24px;
+      }
+      .bt{
+        color: rgb(16, 17, 17);
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: rgb(0, 255, 68);
+        border-radius: 10px;
+        text-decoration: none;
+        float:left;
+        margin-top: 20px;
+        margin-right: 20px;
+      
+  
+      }
+      .bt:hover{
+        background-color: rgb(0, 255, 21);
+        padding:15px 24px 15px 24px;
+      }
+      h1{
+        color:black;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+        
+      }
+      
+ 
+</style> 
+
+</head> 
+<body> 
+<div>
+    <div>
+        <a  class="bt d-flex flex-row"  href="learn.html" role="button">HTML</a>
+        <a  class="bt d-flex flex-row"  href="learn1.html" role="button">CSS</a>
+        <a  class="bt d-flex flex-row"  href="learn2.html" role="button">JS</a>
+        <a  class="btn d-flex flex-row"  href="main.html" role="button">Try it</a>
+    </div>
+    <h1>CSS Properties</h1>
+    <ol>
+        <li><code>color</code>: Sets the text color.</li>
+        <li><code>font-family</code>: Defines the font for text.</li>
+        <li><code>font-size</code>: Sets the size of the font.</li>
+        <li><code>font-weight</code>: Specifies the thickness of characters in text.</li>
+        <li><code>text-align</code>: Aligns text horizontally (left, right, center, justify).</li>
+        <li><code>text-decoration</code>: Adds decorations to text (underline, overline, line-through).</li>
+        <li><code>background-color</code>: Sets the background color of an element.</li>
+        <li><code>background-image</code>: Specifies a background image.</li>
+        <li><code>background-size</code>: Controls the size of the background image.</li>
+        <li><code>background-position</code>: Sets the starting position of the background image.</li>
+        <li><code>border</code>: Creates a border around an element (width, style, color).</li>
+        <li><code>margin</code>: Sets the margin space outside the border.</li>
+        <li><code>padding</code>: Sets the padding space inside the border.</li>
+        <li><code>width</code>: Defines the width of an element.</li>
+        <li><code>height</code>: Defines the height of an element.</li>
+        <li><code>display</code>: Specifies how an element should be displayed (block, inline, inline-block, etc.).</li>
+        <li><code>position</code>: Defines the positioning method of an element (relative, absolute, fixed).</li>
+        <li><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>: Positions an element precisely within its container.</li>
+        <li><code>float</code>: Aligns an element to the left or right within its container.</li>
+        <li><code>clear</code>: Specifies which sides of an element floating elements should not be allowed.</li>
+        <li><code>z-index</code>: Controls the stacking order of positioned elements.</li>
+        <li><code>overflow</code>: Defines how content should behave when it overflows its container.</li>
+        <li><code>box-sizing</code>: Specifies how the total width and height of an element are calculated.</li>
+        <li><code>cursor</code>: Defines the mouse cursor appearance when hovering over an element.</li>
+        <li><code>list-style-type</code>: Sets the style of list item markers (disc, circle, decimal, etc.).</li>
+        <li><code>text-transform</code>: Controls the capitalization of text (uppercase, lowercase, capitalize).</li>
+        <li><code>line-height</code>: Sets the height of a line of text.</li>
+        <li><code>letter-spacing</code>: Adjusts the spacing between characters in text.</li>
+        <li><code>text-shadow</code>: Adds a shadow effect to text.</li>
+        <li><code>box-shadow</code>: Adds a shadow effect to an element.</li>
+        <li><code>border-radius</code>: Rounds the corners of an element.</li>
+        <li><code>opacity</code>: Controls the transparency of an element.</li>
+        <li><code>transition</code>: Creates smooth transitions for CSS properties.</li>
+        <li><code>transform</code>: Applies 2D or 3D transformations to an element.</li>
+        <li><code>animation</code>: Specifies animations for elements.</li>
+        <li><code>@media</code>: Defines media queries for responsive design.</li>
+    </ol>
+    CSS Selectors:
+    
+    <ol>
+        <li>Type selector: Selects elements of a specific type (e.g., <code>p</code> selects all paragraphs).</li>
+        <li>Class selector: Selects elements with a specific class (e.g., <code>.highlight</code> selects all elements with class "highlight").</li>
+        <li>ID selector: Selects a single element with a specific ID (e.g., <code>#header</code> selects the element with ID "header").</li>
+        <li>Descendant selector: Selects elements that are descendants of a specific element (e.g., <code>ul li</code> selects all list items within unordered lists).</li>
+        <li>Child selector: Selects elements that are direct children of a specific element (e.g., <code>ul &gt; li</code> selects all list items that are immediate children of unordered lists).</li>
+        <li>Universal selector: Selects all elements (e.g., <code>*</code> selects all elements).</li>
+        <li>Attribute selector: Selects elements based on their attributes (e.g., <code>[type="text"]</code> selects all input elements with <code>type="text"</code>).</li>
+        <li>Pseudo-class selector: Selects elements based on their state or position (e.g., <code>:hover</code> selects elements when hovered over).</li>
+        <li>Pseudo-element selector: Selects parts of an element (e.g., <code>::before</code> selects the content before an element).</li>
+        <li><code>content</code>: Specifies generated content before or after an element using the <code>::before</code> and <code>::after</code> pseudo-elements.</li>
+        <li><code>user-select</code>: Controls whether an element can be selected or not by the user.</li>
+        <li><code>outline</code>: Sets the outline around an element (width, style, color).</li>
+        <li><code>text-overflow</code>: Defines what should happen when text overflows its containing element.</li>
+        <li><code>white-space</code>: Controls how whitespace inside an element is handled.</li>
+        <li><code>word-wrap</code>: Specifies how long words should be broken and wrapped to the next line.</li>
+        <li><code>background-attachment</code>: Sets whether a background image is fixed or scrolls with the content.</li>
+        <li><code>background-repeat</code>: Defines how a background image should repeat (repeat, repeat-x, repeat-y, no-repeat).</li>
+        <li><code>background-clip</code>: Determines the area of an element that is affected by the background properties.</li>
+        <li><code>box-shadow</code>: Adds a shadow effect to an element.</li>
+        <li><code>box-sizing</code>: Specifies how the total width and height of an element are calculated.</li>
+        <li><code>text-transform</code>: Controls the capitalization of text (uppercase, lowercase, capitalize).</li>
+        <li><code>text-overflow</code>: Specifies what should happen when text overflows its containing element.</li>
+        <li><code>overflow-x</code> and <code>overflow-y</code>: Defines the behavior of overflow in the horizontal and vertical directions.</li>
+        <li><code>:nth-child()</code>: Selects elements based on their position within a parent element.</li>
+        <li><code>:not()</code>: Selects elements that do not match a specified selector.</li>
+        <li><code>:focus</code>: Selects an element when it is focused.</li>
+        <li><code>:first-child</code>: Selects an element that is the first child of its parent.</li>
+        <li><code>:last-child</code>: Selects an element that is the last child of its parent.</li>
+        <li><code>:first-of-type</code>: Selects the first element of a specific type within its parent.</li>
+        <li><code>:last-of-type</code>: Selects the last element of a specific type within its parent.</li>
+        <li><code>:nth-of-type()</code>: Selects elements of a specific type based on their position within their parent.</li>
+        <li><code>:enabled</code>: Selects form elements that are enabled (not disabled).</li>
+        <li><code>:disabled</code>: Selects form elements that are disabled.</li>
+        <li><code>:checked</code>: Selects radio buttons or checkboxes that are checked.</li>
+        <li><code>:before</code> and <code>:after</code>: Pseudo-elements to insert content before or after an element.</li>
+    </ol>
+  
+    
+
+</div> 
+
+</body> 
+
+
+</html>

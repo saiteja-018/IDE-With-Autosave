@@ -1,0 +1,149 @@
+<html> 
+<head>
+    <title>Scoder</title> 
+    <link rel="icon" href="https://res.cloudinary.com/dh8me97r4/image/upload/v1694359623/IMG_20230910_205517_oz8rhk.png" type="image">
+<style>
+*{
+        font-family: "Poppins", sans-serif;
+ }
+ li {
+          margin: 10px; /* Add margin between list items */
+          padding: 15px; /* Add padding on the left side of each list item */
+    }
+    .btn{
+        color: rgb(16, 17, 17);
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: rgb(0, 255, 68);
+        border-radius: 10px;
+        text-decoration: none;
+        float:right;
+        margin-top: 20px;
+        margin-right: 20px;
+      
+  
+      }
+      .btn:hover{
+        background-color: rgb(0, 255, 21);
+        padding:15px 24px 15px 24px;
+      }
+      .bt{
+        color: rgb(16, 17, 17);
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: rgb(0, 255, 68);
+        border-radius: 10px;
+        text-decoration: none;
+        float:left;
+        margin-top: 20px;
+        margin-right: 20px;
+      
+  
+      }
+      .bt:hover{
+        background-color: rgb(38, 255, 0);
+        padding:15px 24px 15px 24px;
+      }
+      h1{
+        color:black;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+        
+      }
+      
+ 
+</style> 
+
+</head> 
+<body> 
+<div>
+     <div>
+       <a  class="bt d-flex flex-row"  href="learn.html" role="button">HTML</a>
+       <a  class="bt d-flex flex-row"  href="learn1.html" role="button">CSS</a>
+       <a  class="bt d-flex flex-row"  href="learn2.html" role="button">JS</a>
+
+       <a  class="btn d-flex flex-row"  href="main.html" role="button">Try it</a>
+    </div>
+    <div>
+      <h1>JAVASCRIPT</h1>
+      <ol>
+        <li>**Mouse Events:**</li>
+        <ul>
+            <li>&lt;element.onclick&gt;: Executes code when an element is clicked.</li>
+            <li>&lt;element.onmousedown&gt;: Executes code when the mouse button is pressed down on an element.</li>
+            <li>&lt;element.onmouseup&gt;: Executes code when the mouse button is released on an element.</li>
+            <li>&lt;element.onmousemove&gt;: Executes code when the mouse pointer moves within an element.</li>
+            <li>&lt;element.onmouseover&gt;: Executes code when the mouse pointer enters an element.</li>
+            <li>&lt;element.onmouseout&gt;: Executes code when the mouse pointer leaves an element.</li>
+            <li>&lt;element.onmouseenter&gt;: Executes code when the mouse pointer enters an element (does not bubble).</li>
+            <li>&lt;element.onmouseleave&gt;: Executes code when the mouse pointer leaves an element (does not bubble).</li>
+            <li>&lt;element.oncontextmenu&gt;: Executes code when the right mouse button is clicked on an element.</li>
+        </ul>
+        <li>**Keyboard Events:**</li>
+        <ul>
+            <li>&lt;element.onkeydown&gt;: Executes code when a key is pressed down while the element has focus.</li>
+            <li>&lt;element.onkeyup&gt;: Executes code when a key is released while the element has focus.</li>
+            <li>&lt;element.onkeypress&gt;: Executes code when a key is pressed and released while the element has focus.</li>
+        </ul>
+        <li>**Form Events:**</li>
+        <ul>
+            <li>&lt;element.onsubmit&gt;: Executes code when a form is submitted.</li>
+            <li>&lt;element.onreset&gt;: Executes code when a form is reset.</li>
+            <li>&lt;element.onchange&gt;: Executes code when the value of an input element changes.</li>
+            <li>&lt;element.oninput&gt;: Executes code when the user interacts with an input element (e.g., typing in a text field).</li>
+        </ul>
+        <li>**Focus Events:**</li>
+        <ul>
+            <li>&lt;element.onfocus&gt;: Executes code when an element receives focus.</li>
+            <li>&lt;element.onblur&gt;: Executes code when an element loses focus.</li>
+        </ul>
+        <li>**Window Events:**</li>
+        <ul>
+            <li>&lt;window.onload&gt;: Executes code when the entire page (including all assets) has finished loading.</li>
+            <li>&lt;window.onresize&gt;: Executes code when the browser window is resized.</li>
+            <li>&lt;window.onscroll&gt;: Executes code when the user scrolls the page.</li>
+            <li>&lt;window.onunload&gt;: Executes code when the user leaves the page (e.g., closes the tab or browser).</li>
+        </ul>
+        <li>**Media Events:**</li>
+        <ul>
+            <li>&lt;element.onplay&gt;: Executes code when media (e.g., audio or video) starts playing.</li>
+            <li>&lt;element.onpause&gt;: Executes code when media is paused.</li>
+            <li>&lt;element.onended&gt;: Executes code when media playback reaches the end.</li>
+            <li>&lt;element.ontimeupdate&gt;: Executes code as media playback progresses (e.g., updating a progress bar).</li>
+        </ul>
+    </ol>
+    Certainly! Here's a list of common JavaScript alerts, confirms, and prompts that you can use to interact with users:
+    
+    JavaScript Dialogs:
+    
+    <ol>
+        <li>**Alert Dialog:**</li>
+        <ul>
+            <li><code>alert(message)</code>: Displays a simple dialog box with a message and an "OK" button. Used for informational pop-ups.</li>
+        </ul>
+        <li>**Confirm Dialog:**</li>
+        <ul>
+            <li><code>confirm(message)</code>: Displays a dialog box with a message, an "OK" button, and a "Cancel" button. Returns true if the user clicks "OK" and false if "Cancel" is clicked.</li>
+        </ul>
+        <li>**Prompt Dialog:**</li>
+        <ul>
+            <li><code>prompt(message, defaultText)</code>: Displays a dialog box with a message, an input field, an "OK" button, and a "Cancel" button. Returns the text entered by the user or null if "Cancel" is clicked.</li>
+        </ul>
+    </ol>
+    
+    
+</div>
+
+</div> 
+
+</body> 
+
+
+</html>
